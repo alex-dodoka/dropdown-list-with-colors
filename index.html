@@ -7,20 +7,11 @@
 </head>
 <body>
 <h1 id="title" class="text-center">Заголовок изменяющий цвет</h1>
-
-<div class="btn-group">
-    <button type="button" data-toggle="dropdown" class="btn btn-info dropdown-toggle">
-        Кнопка с выпадающим меню
-        <span class="caret"></span>
-    </button>
-    <ul class="dropdown-menu">
-        <li><a onclick="color('tomato')">Красный</a></li>
-        <li><a onclick="color('greenyellow')" class="green">Зеленый</a></li>
-        <li class="divider"></li>
-        <li><a onclick="color('darkslategray')">Сбросить цвет</a></li>
-    </ul>
-</div>
-
+<select multiple >
+    <option onclick="color('tomato')">Красный</option>
+    <option onclick="color('greenyellow')">Зеленый</option>
+    <option onclick="color('darkslategray')">Сбросить цвет</option>
+</select>
 
 <script src="bower_components/jquery/dist/jquery.js"></script>
 <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
